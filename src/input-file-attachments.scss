@@ -1,0 +1,77 @@
+.input-file-attachments {
+  display: grid;
+  align-content: start;
+  gap: 5px;
+
+  .input-file-attachment {
+    display: grid;
+    align-content: start;
+    gap: 5px;
+
+    &.is-selected {
+      .input-file-btn {
+        display: none;
+      }
+    }
+
+    &:not(.is-error) {
+      .input-error {
+        height: 0;
+        opacity: 0;
+      }
+    }
+
+    &:not(.is-selected) {
+      .input-file-attachment-info {
+        display: none;
+      }
+    }
+  }
+
+  .input-file-attachment-info {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #e3e4e8;
+    border-radius: 5px;
+  }
+
+  .file-attachment-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #49525d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .file-attachment-size {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8b90;
+  }
+
+  .file-attachment-remove {
+    justify-self: end;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    color: #ff395e;
+    transition: ease background-color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f4f5f9;
+    }
+
+    &:active {
+      background-color: #edeef2;
+    }
+  }
+}
