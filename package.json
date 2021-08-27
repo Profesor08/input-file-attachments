@@ -1,6 +1,6 @@
 {
   "name": "@prof-dev/input-file-attachments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Input Files Attachemnts",
   "main": "lib/InputFileAttachments.js",
   "types": "lib/InputFileAttachments.d.ts",
