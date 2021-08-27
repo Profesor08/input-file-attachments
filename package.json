@@ -2,8 +2,8 @@
   "name": "@prof-dev/input-file-attachments",
   "version": "1.0.0",
   "description": "Input Files Attachemnts",
-  "main": "lib/Input.js",
-  "types": "lib/Input.d.ts",
+  "main": "lib/InputFileAttachments.js",
+  "types": "lib/InputFileAttachments.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production && npx tsc",
